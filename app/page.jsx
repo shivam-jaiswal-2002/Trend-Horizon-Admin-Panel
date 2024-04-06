@@ -1,6 +1,5 @@
 // pages/index.js
 "use client";
-// pages/index.js
 import { useEffect, useState } from 'react';
 import { useSession } from 'next-auth/react';
 
@@ -106,6 +105,11 @@ export default function Home() {
               </div>
             ) : (
               <div>
+                    <img
+              src={product.image}
+              alt={product.title}
+              className="w-full h-48 object-contain mb-4 cursor-pointer" // Set object-fit to "contain"
+            />
                 <h2 className="text-xl font-semibold">{product.title}</h2>
                 <p className="text-gray-600">{product.description}</p>
                 <p className="mt-2">Price: ${product.price}</p>

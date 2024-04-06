@@ -6,7 +6,7 @@ import { signOut, useSession } from "next-auth/react";
 function Navbar() {
   const { data: session } = useSession();
   return (
-    <nav className="fixed w-full bg-black font-serif text-white flex justify-between items-center px-4 py-2">
+    <nav className="fixed w-full bg-black font-serif top-0 text-white flex justify-between items-center px-4 py-2">
       <Link href="/" className='text-2xl'>
         TrendHorizon
       </Link>
@@ -17,7 +17,7 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="/users">
+          <Link href="/Users">
             Users
           </Link>
         </li>

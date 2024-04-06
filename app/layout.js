@@ -20,7 +20,7 @@ export default async function RootLayout({ children }) {
         <SessionProvider session={session}>
               <div className="wrapper">
                 <Navbar />
-                <div className="mt-10 pt-7">{children}</div>
+                <div className="mt-4 pt-7">{children}</div>
               </div>
         </SessionProvider>
       </body>
